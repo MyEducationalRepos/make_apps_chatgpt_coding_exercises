@@ -15,7 +15,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     # Load environment variables from the .env file
     load_dotenv()
-    openai.api_key = os.environ.get("OPENAI_API_KEY")
 
     # get variables from the HTTP request req_body
     req_body = req.get_json()
